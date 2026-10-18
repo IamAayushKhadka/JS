@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="three.css">
+</head>
+<body>
+    
+    <div class="button-bar">
+        <button data-color="red">Red</button>
+        <button data-color="yellow">Yellow</button>
+        <button data-color="green">Green</button>
+        <button data-color="purple">Purple</button>
+    </div>
+
+
+</body>
+<script>
+
+    const buttonBar = document.querySelector('.button-bar')
+
+
+    buttonBar.addEventListener('click', (e)=>{
+        // console.log(e.target.getAttribute('data-color'));
+        buttonBar.style.backgroundColor = e.target.getAttribute('data-color')
+        
+    },false)
+
+</script>
+</html>
